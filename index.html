@@ -34,9 +34,23 @@
                 <header class="header clearfix">
                     <a href="index.html"><img class="logo" src="img/logo.png" alt="oneStop"></a>
                     <nav class="mainNav">
-                        <ul>
+                        <ul id="dropDown" class="clearfix">
                             <li><a href="destination.html"><img class="navIcon" src="img/icons/desti.png" alt="destination"><p>destinations</p></a></li>
-                                <li><a href="things to do template.html"><img class="navIcon" src="img/icons/tings.png" alt="thingstodo"><p>things to do</p></a></li>
+
+                            <li><a href="things to do template.html"><img class="navIcon" src="img/icons/tings.png" alt="thingstodo"><p>things to do</p></a>
+                                <ul>
+                                        <li><a href="product template.html"><p>Test one</p></a></li>
+                                        <li><a href="product template.html"><p>Test Two</p></a></li>
+                                        <li><a href="product template.html"><p>Test Three</p></a>
+                                            <ul>
+                                                <li><a href="product template.html"><p>Test one</p></a></li>
+                                                <li><a href="product template.html"><p>Test Two</p></a></li>
+                                                <li><a href="product template.html"><p>Test Three</p></a>
+                                            </ul>
+                                        </li>
+                                        <li><a href="product template.html"><p>Test Four</p></a></li>
+                                </ul>
+                            </li>
                                 <li><a href="package template.html"><img class="navIcon" src="img/icons/packs.png" alt="packages"><p>packages</p></a></li>
                                 <li><a href="accomodation template.html"><img class="navIcon" src="img/icons/accom.png" alt="accomodation"><p>accomodations</p></a></li>
                                 <li><a href="checkout.html"><img class="navIcon" src="img/icons/cart.png" alt="cart"><p>checkout</p></a></li>
@@ -86,6 +100,7 @@ Accommodation</h3>
                             </div>
                         </div>
                         <section class="containerPackages clearfix"> <!-- PACKAGE BLOCK -->
+                            <div class="packagesWrap">
                             <article class="containerPackage">
                                 <a href="product template.html"><img class="pImage" src="img/feat/kayak.jpg" alt="noAltPImg"></a>
                                 <h3>2 Day Abel Tasman Walking Break
@@ -122,6 +137,7 @@ Accommodation</h3>
                                 </div>
                                 <button type="button">ADD CART</button>
                             </article>
+                        </div>
                             <a class="leftArrow" href="#"></a>
                             <a class="rightArrow" href="#"></a>
                         </section>
