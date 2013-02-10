@@ -289,6 +289,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);
 
 /*========Package Sections=============*/
 .containerPackages {position:relative; width:100%; padding-bottom:20px;}
+.packagesWrap {width:100%; overflow:hidden;}
 .containerPackage {float:left; width:28.125%; /*270px*/ padding:1.6%; /*15px*/ margin-right:2%; /*20px*/ background-color:#e0e0e0;}
 .pImage {width:100%;}
 .more {display:block; color:#fb5411;}
