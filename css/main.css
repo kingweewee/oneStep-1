@@ -610,6 +610,7 @@ PRODUCT / PACKAGES PAGE
 
 .containerProduct {float:left; width:67.77%; max-width:650px; margin-right:2%; padding:2%;  background-color:#e0e0e0;}
 
+.productHeader {position:absolute;}
 .containerProduct article {margin-bottom:20px;}
 .productImage {width:100%; margin-bottom:20px;}
 .productTextWrap {width:65.71%; max-width:460px; float:left;}
