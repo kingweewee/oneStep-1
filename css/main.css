@@ -346,7 +346,7 @@ position: absolute;
 }
 
 .containerFeaturedImage{ position:relative; width:72.90%; /*700px*/ float:left;}
-=======
+
 .containerFeaturedHeader {position:absolute;}
 .containerFeaturedImage{width:72.90%; /*700px*/ float:left;}
 #bannerCon {background: none;margin: auto;width: 500px;height: 160px;padding-top: 18px;}
@@ -376,8 +376,6 @@ position: absolute;
 	font-size: 1.5em;
 	letter-spacing: .2em;
 }
-
->>>>>>> css
 .featuredImage {max-width:100%;  max-height:280px;}
 
 .captionWrap { overflow:hidden; position:relative; width:100%;}
@@ -556,9 +554,7 @@ position: absolute;}
 #goo {background-position:-74px 0;}
 #goo:hover {background-position:-74px -38px ;}
 
-<<<<<<< HEAD
-.footerLogo {float:right; width:100%; min-width:100px; max-width:180px; margin-bottom:10px;}
-=======
+
 #srcTitle {display:none;}
 #searchBar {width:69%; height:25px; float:right;}
 .search { margin:0;height:40px;}
@@ -570,13 +566,9 @@ position: absolute;}
 	font: 300 19px 'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 	color: #363d42;
 	width: 70%;
-	padding: 6px 20px 6px 35px;
+	padding: 2px 20px 2px 35px;
 	border: 1px solid #c6c6c6;
 }
-
-
-/* .footerLogo {float:right; width:100%; min-width:100px; max-width:180px; margin-bottom:10px;} */
->>>>>>> css
 
 .copyright {clear:both;}
 
