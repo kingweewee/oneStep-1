@@ -1,6 +1,43 @@
 /* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   Jansbury CSS Reset
    ========================================================================== */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+html,body {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+
+/* ==========================================================================
+   Font Face
+   ========================================================================== */
+   
+   @font-face {
+    font-family: 'champagne-reg';
+    src: url('../fonts/champagne_limousines-webfont.eot');
+    src: url('../fonts/champagne_limousines-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/champagne_limousines-webfont.woff') format('woff'),
+         url('../fonts/champagne_limousines-webfont.ttf') format('truetype'),
+         url('../fonts/champagne_limousines-webfont.svg#champagne__limousinesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'champagne__limousinesbold';
+    src: url('../fonts/champagne_limousinesbold-webfont.eot');
+    src: url('../fonts/champagne_limousinesbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/champagne_limousinesbold-webfont.woff') format('woff'),
+         url('../fonts/champagne_limousinesbold-webfont.ttf') format('truetype'),
+         url('../fonts/champagne_limousinesbold-webfont.svg#champagne__limousinesbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 html,
 button,
@@ -8,11 +45,6 @@ input,
 select,
 textarea {
     color: #222;
-}
-
-body {
-    font-size: 1em;
-    line-height: 1.4;
 }
 
 ::-moz-selection {
@@ -70,8 +102,10 @@ textarea {
 
 
 /*=======Universal Styling========*/
-body{background-color:#f7f7f7; font-size:13px; font-family:"Arial", "Helvetica", serif; color:#090909;}
+body{background-color:#f7f7f7; font-size:12px; serif; color:#090909;font-family: 'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;}
+
 a {text-decoration:none;}
+p{padding: 2% 0}
 
 
 /*=======Containers========*/ 
@@ -265,6 +299,7 @@ box-shadow:3px 3px 6px #d5d5d5;}
 /*========Featured Section=============*/
 .containerFeatured {position:relative; width:100%; margin-bottom:20px; height:280px;}
 
+<<<<<<< HEAD
 /*=============Ribbon Header*/
 .containerFeaturedHeader {position:absolute;
 margin: auto;
@@ -311,6 +346,38 @@ position: absolute;
 }
 
 .containerFeaturedImage{ position:relative; width:72.90%; /*700px*/ float:left;}
+=======
+.containerFeaturedHeader {position:absolute;}
+.containerFeaturedImage{width:72.90%; /*700px*/ float:left;}
+#bannerCon {background: none;margin: auto;width: 500px;height: 160px;padding-top: 18px;}
+
+.banner {background: #e3e3e3;height: 80px;margin-left: -20px;margin-top: 0;position: relative;width: 50%;
+	-webkit-transform: rotate(-15deg) skew(-15deg,0deg);
+	-moz-box-shadow: 9px 10px 15px -8px #3e3e3e;
+	-webkit-box-shadow: 9px 10px 15px -8px #3e3e3e;
+	background-image: url('../img/bannerStripe.png')
+	}
+.arrow {
+
+	line-height: 0;
+	border-left: 17px solid transparent;
+	border-top: 20px solid #3e3e3e;
+	top: 100%;
+	left: 0;
+	position: absolute;
+	
+}
+.bannerText{
+	padding:20px;
+	margin: 0 auto;
+	text-align: center;
+	font-family:'champagne__limousinesbold', helvetica, arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: .2em;
+}
+
+>>>>>>> css
 .featuredImage {max-width:100%;  max-height:280px;}
 
 .captionWrap { overflow:hidden; position:relative; width:100%;}
@@ -418,7 +485,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);}
 
 /*========Package Sections=============*/
 .containerPackages {position:relative; width:100%; padding-bottom:20px;}
-.packagesWrap {width:100%; overflow:hidden;}
+.packagesWrap {width:100%; overflow:hidden;border: 1px solid red;}
 .containerPackage {float:left; width:28.125%; /*270px*/ padding:1.6%; /*15px*/ margin-right:2%; /*20px*/ background-color:#e0e0e0;}
 .pImage {width:100%;}
 .more {display:block; color:#fb5411;}
@@ -446,34 +513,39 @@ background-repeat: no-repeat;
 
 
 /*========Footer Section=============*/
-.footer {width:100%; /*300px*/ background-color:#e7e7d4; padding-top:40px}
-.footer li {width:120px; padding-bottom:5px;}
+.footer {width:100%; /*300px*/ background-color:#e7e7d4; padding:20px 0 15px 0;font-family: 'champagne-reg', helvetica, arial, sans-serif;text-transform: uppercase;letter-spacing: .2em;}
+.footer li {width:160px; padding-bottom:8px;}
 .footer a {color:#090909;}
-.containerFooterContent {width:93.75%; margin:0 auto; max-width:1280px;}
+.containerFooterContent {width:93.75%; margin:0 auto; max-width:960px;}
 
 /*========Mascot Block=============*/
-.conatinerMascot {float:left; width:30%; /*288px*/ margin-left:5%; /*20px*/}
-.conatinerMascot img {float:left;}
-#mascot {width:69.44%; /*200px*/ max-width:200px;}
+.conatinerMascot {float:left; width:30%; /*288px*/ }
+#mascot {width:139px; height: 166px; /*200px*/ max-width:200px;background: url('../img/mascot.png') no-repeat;left: 0;
+right: 0;
+margin: 0 auto;
+position: absolute;}
 
 
 
 /*========Footer Nav=============*/
-.footerNav {float:left; width:28%; /*300px*/ padding-right:2%;}
-.footerNav ul { list-style:none; float:left; width:35%; margin-top:0; padding-left:20px; padding-right:10px;}
+.footerNav {float:left; width:35%; /*300px*/}
+.footerNav ul { list-style:none; float:left; width:35%; margin-top:0; padding-right:30px;}
 .footerNav a {width:120px;}
 .footerNav a:hover {color:#899433;}
 
 
 /*========Social Media / Search and Logo=============*/
-.containerSSL { text-align:right; float:left;  width:28%; margin-left:2%;}
+.containerSSL { text-align:right; float:right;  width:35%;}
 
-.containerSocial {margin-bottom:10px; height:35px;}
-.containerSocial a { float:right; display:block;
-width:36px; height:35px; margin-right:10px;
-background:url('../img/sc/scIcons.png') no-repeat;
-background-image:url('../img/sc/scIcons.png');
-background-repeat:none;}
+.containerSocial {margin:10px 0; height:35px;}
+.containerSocial a { 
+	float:right; 
+	display:block;
+	width:36px; 
+	height:35px; 
+	margin:0 0 0 10px;
+	background:url('../img/sc/scIcons.png') no-repeat;
+}
 
 #facebook {background-position:0 0;}
 #facebook:hover {background-position:0 -38px;}
@@ -484,7 +556,27 @@ background-repeat:none;}
 #goo {background-position:-74px 0;}
 #goo:hover {background-position:-74px -38px ;}
 
+<<<<<<< HEAD
 .footerLogo {float:right; width:100%; min-width:100px; max-width:180px; margin-bottom:10px;}
+=======
+#srcTitle {display:none;}
+#searchBar {width:69%; height:25px; float:right;}
+.search { margin:0;height:40px;}
+
+#searchBar{
+	outline: 0;
+	background: transparent url('../img/glass.png') no-repeat 8px center;
+	-webkit-appearance: textfield;
+	font: 300 19px 'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	color: #363d42;
+	width: 70%;
+	padding: 6px 20px 6px 35px;
+	border: 1px solid #c6c6c6;
+}
+
+
+/* .footerLogo {float:right; width:100%; min-width:100px; max-width:180px; margin-bottom:10px;} */
+>>>>>>> css
 
 .copyright {clear:both;}
 
