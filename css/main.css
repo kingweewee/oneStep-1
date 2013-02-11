@@ -110,14 +110,10 @@ background-repeat:none;}
 .mainNav {float:left; width:70.83%; /*680px*/ margin-left:0.8%;}
 .mainNav ul {list-style:none; width:100%; margin:0; padding:0;}
 .mainNav li {width:16.89%; /*115px*/ padding:0 10px 0 10px; height:inherit; float:left; padding-top:10px; border-right:1px solid #E2E2E1 ;}
-.mainNav li:hover {background-color:#cbd48b; 
-   -moz-box-shadow:    inset 3px 0 5px #696767;
-   -webkit-box-shadow: inset 3px 0 5px #696767;
-   box-shadow:         inset 3px 0 5px #696767;
-}
+
 .mainNav img { width:25px; height:25px;}
 .mainNav a {display:block; text-transform:uppercase; width:90%; color:#858585; text-align:center;}
-.mainNav p {width:100%;}
+.mainNav p {width:100%; height:20px;}
 
 
 /*=================Drop Down==================*/
@@ -157,11 +153,13 @@ background-repeat:none;}
 
 #dropDown ul ul {
     top: 0;
-    left: 135px;
+    left: 100%;
     margin: 0 0 0 10px;
     _margin: 0; /*IE6 only*/
     box-shadow: -1px 0 0 rgba(255,255,255,.3);      
 }
+
+#dropDown ul p {margin:2px 0 2px 0;}
 
 #dropDown ul li {
     float: none;
@@ -267,7 +265,49 @@ box-shadow:3px 3px 6px #d5d5d5;}
 /*========Featured Section=============*/
 .containerFeatured {position:relative; width:100%; margin-bottom:20px; height:280px;}
 
-.containerFeaturedHeader {position:absolute;}
+.containerFeaturedHeader {position:absolute;
+margin: auto;
+width: 500px;
+height: 160px;
+padding-top: 20px;
+font-family: helvetica, arial, sans-serif;
+}
+
+.headerText {
+background:url('../img/backHeader.png') repeat #cbd48b;
+background-image:url('../img/backHeader.png');
+background-color:#cbd48b;
+background-repeat:repeat;
+height: 50px;
+text-align:center;
+margin-left: -20px;
+margin-top: 0;
+position: relative;
+width: 50%;
+-webkit-transform: rotate(-15deg) skew(-15deg,0deg);
+-moz-box-shadow: 1px 1px 3px #292929;
+-webkit-box-shadow: 5px 10px 15px -10px #3e3e3e;
+color: #080200;
+padding:10px;
+font-family:'champagne-reg', helvetica, arial, sans-serif;
+text-transform: uppercase;
+font-size: 1em;
+letter-spacing: .2em;
+}
+
+.headerText h3 {margin-top:0;}
+.arrow {
+width: 0;
+height: 0;
+line-height: 0;
+border-left: 17px solid transparent;
+border-top: 20px solid #3e3e3e;
+top: 100%;
+left: 0;
+position: absolute;
+}
+
+
 .containerFeaturedImage{width:72.90%; /*700px*/ float:left;}
 .featuredImage {max-width:100%;  max-height:280px;}
 .containerFeaturedLinks {position:relative; float:left; width:25%; height:280px;
