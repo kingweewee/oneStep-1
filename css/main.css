@@ -616,14 +616,14 @@ PRODUCT / PACKAGES PAGE
 /* Fallback for web browsers that doesn't support RGBa */
 background: rgb(0, 0, 0) transparent;
 /* RGBa with 0.6 opacity */
-background: rgba(0, 0, 0, 0.4);
+background: rgba(0, 0, 0, 0.3);
 /* For IE 5.5 - 7*/
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 /* For IE 8*/
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
-.productHeader h2 {padding:10px; font-size:18px;}
+.productHeader h2 {padding:10px; font-size:16px;}
 .productImageWrap {position:relative; width:100%;}
 .productImage {width:100%; margin-bottom:20px;}
 .productTextWrap {width:65.71%; max-width:460px; float:left;}
