@@ -263,6 +263,9 @@ width: 50%;
 -webkit-transform: rotate(-15deg) skew(-15deg,0deg);
 -moz-box-shadow: 1px 1px 3px #292929;
 -webkit-box-shadow: 5px 10px 15px -10px #3e3e3e;
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+zoom: 1;
 color: #080200;
 padding:10px;
 font-family:'champagne-reg', helvetica, arial, sans-serif;
@@ -294,6 +297,9 @@ position: absolute;
 	-webkit-transform: rotate(-15deg) skew(-15deg,0deg);
 	-moz-box-shadow: 9px 10px 15px -8px #3e3e3e;
 	-webkit-box-shadow: 9px 10px 15px -8px #3e3e3e;
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.Shadow(
+        color='#777777', Direction=135, Strength=5);
 	background-image: url('../img/bannerStripe.png')
 	}
 .arrow {
@@ -342,10 +348,6 @@ background:url('../img/homeSignOne.png') no-repeat;
 background-image:url('../img/homeSignOne.png');
 background-repeat:none;}
 .standardLink:hover {
-animation:rotateSigns 1s 1;
--moz-animation:rotateSigns 1s 1;
--webkit-animation:rotateSigns 2s 1;
--o-animation:rotateSigns 1s 1;
 }
 
 .luxuryLink { position:absolute; width:192px; height:77px; top:110px; left:30px;
@@ -354,71 +356,9 @@ background-image:url('../img/homeSignTwo.png');
 background-repeat:none;}
 
 .luxuryLink:hover {
-animation:rotateSigns 1s 1;
--moz-animation:rotateSigns 1s 1;
--webkit-animation:rotateSigns 2s 1;
--o-animation:rotateSigns 1s 1;
 }
 
-/*=========Reference for animtions===========*/
-/*animation:mymove 5s infinite;*/
-/*-moz-animation:mymove 5s infinite;*/ /* Firefox */
-/*-webkit-animation:mymove 5s infinite;*/ /* Safari and Chrome */
-/*-o-animation:mymove 5s infinite;*/ /* Opera */
-/*}*/
 
-@keyframes rotateSigns
-{
-
-from {
--moz-transform:rotate(0deg); -moz-transform:skewx(0deg) translatex(0);
--webkit-transform:rotate(0deg);
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0);}
-
-to {
--moz-transform:rotate(20deg); -moz-transform:skewx(20deg) translatex(150px);
--webkit-transform:rotate(20deg);
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);}
-}
-
-@-moz-keyframes rotateSigns /* Firefox */
-{
-from {
--moz-transform:rotate(0deg); -moz-transform:skewx(0deg) translatex(150px);
--webkit-transform:rotate(0deg);
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0);}
-
-to {
--moz-transform:rotate(20deg); -moz-transform:skewx(20deg) translatex(150px);
--webkit-transform:rotate(20deg);
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);}
-}
-
-@-webkit-keyframes rotateSigns /* Safari and Chrome */
-{
-from {
--moz-transform:rotate(0deg); -moz-transform:skewx(0deg) translatex(150px);
--webkit-transform:rotate(0deg);
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0);}
-
-to {
--moz-transform:rotate(20deg); -moz-transform:skewx(20deg) translatex(150px);
--webkit-transform:rotate(20deg);
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);}
-}
-
-@-o-keyframes rotateSigns /* Opera */
-{
-from {
--moz-transform:rotate(0deg); -moz-transform:skewx(0deg) translatex(150px);
--webkit-transform:rotate(0deg);
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0);}
-
-to {
--moz-transform:rotate(20deg); -moz-transform:skewx(20deg) translatex(150px);
--webkit-transform:rotate(20deg);
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);}
-}
 
 /*========Package Sections=============*/
 .containerPackages {position:relative; width:100%; padding-bottom:20px;}
@@ -581,6 +521,7 @@ background-repeat:none;}
 .sidebarStandardLink:hover {
 -moz-transform:rotate(20deg); -moz-transform:skewx(20deg) translatex(150px);
 -webkit-transform:rotate(20deg);
+-0-transform:rotate(15deg);
 filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);
 }
 
@@ -592,6 +533,7 @@ background-repeat:none;}
 .sidebarLuxuryLink:hover {
 -moz-transform:rotate(15deg); -moz-transform:skewx(15deg) translatex(150px);
 -webkit-transform:rotate(15deg);
+-0-transform:rotate(15deg);
 filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);
 }
 
